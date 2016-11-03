@@ -1,0 +1,106 @@
+.box {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	background: blue;
+}
+
+#box1 {
+	transform: scale(4, 2);
+}
+
+#box2 {
+	transform: translate(25px, 50px);
+	/*transform: translateY(25px);*/
+}
+
+#box3 {
+	position: relative;
+	left: 25px;
+	top: 50px;
+}
+
+#box4 {
+	transform: rotate(30deg) skewX(60deg);
+}
+
+#box5 {
+	transform: skewX(60deg);
+}
+
+#box6 {
+	transform: rotateX(30deg);
+}
+
+#box7 {
+	transition: width 10s cubic-bezier(0.785, 0.135, 0.15, 0.86), background-color 4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#box7:hover {
+	width: 300px;
+}
+
+#box8 {
+	transition: all 10s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.red {
+	background: red;
+}
+
+@keyframes move {
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(50vw, 50vh);
+	}
+	100% {
+		transform: translate(90vw, 50vh);
+	}
+}
+
+#box9 {
+	animation: move 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
+}
+
+#box10 {
+	animation: move 1s linear;
+}
+
+#box11 {
+	background: linear-gradient(270deg, #000000, #0b6850);
+	animation: animateGradient 10s;
+}
+
+@keyframes animateGradient {
+	to {
+		background: linear-gradient(270deg, #ffffff, #0b6850);
+	}
+	from {
+		background: black;	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
